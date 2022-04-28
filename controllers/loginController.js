@@ -7,6 +7,10 @@ const registerView = (req, res) => {
   res.render("register", {});
 };
 
+const presentationPage = (req, res) => {
+  res.render("home", {});
+};
+
 //Post Request for Register
 
 const registerUser = (req, res) => {
@@ -84,6 +88,7 @@ const loginUser = (req, res) => {
 
 module.exports = {
   registerView,
+  presentationPage,
   loginView,
   registerUser,
   loginUser,
